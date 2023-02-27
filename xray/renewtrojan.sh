@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(curl -s -X GET https://checkip.amazonaws.com);
 echo "Checking VPS"
-IZIN=$( curl curl https://raw.githubusercontent.com/Rolka111111/scripts/main/users | grep -o "$MYIP" );
+IZIN=$( curl https://raw.githubusercontent.com/Rolka111111/scripts/main/users | grep -o "$MYIP" );
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
