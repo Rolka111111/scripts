@@ -18,7 +18,7 @@ hostname="s/xxxxxxxxxxxxxxxxxxxxxxx/$domain/g";
 hostname2="s/xxxxxxxxx/$domain/g";
 MYIP=$(curl -s -X GET https://checkip.amazonaws.com);
 echo "Checking VPS"
-IZIN=$( curl http://miss.my.id:3009/api/v1/users | grep -o "$MYIP" );
+IZIN=$( curl https://raw.githubusercontent.com/Rolka111111/scripts/main/users | grep -o "$MYIP" );
 if [ $MYIP = $IZIN >/dev/null 2>&1 ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -74,16 +74,16 @@ checkSystem() {
 }
 
 # Link Hosting Kalian
-hasandnc="raw.githubusercontent.com/mochammadhb/scripts/main/ssh"
+hasandnc="raw.githubusercontent.com/Rolka111111/scripts/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
-hasandnc2="raw.githubusercontent.com/mochammadhb/scripts/main/xray"
+hasandnc2="raw.githubusercontent.com/Rolka111111/scripts/main/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-hasandnc3="raw.githubusercontent.com/mochammadhb/scripts/main/trojango"
+hasandnc3="raw.githubusercontent.com/Rolka111111/scripts/main/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-hasandnc4="raw.githubusercontent.com/mochammadhb/scripts/main/stunnel5"
+hasandnc4="raw.githubusercontent.com/Rolka111111/scripts/main/stunnel5"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
@@ -543,9 +543,9 @@ systemctl enable snell.service
 cd /usr/bin
 echo  -e "${GREEN}Please wait for install main menu. . .${NC}"
 wget -O addhost "https://${hasandnc}/addhost.sh" >/dev/null 2>&1
-wget -O about "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/about.sh" >/dev/null 2>&1
-wget -O menu "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu.sh" >/dev/null 2>&1
-wget -O menu-proxy "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-proxy.sh" >/dev/null 2>&1
+wget -O about "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/about.sh" >/dev/null 2>&1
+wget -O menu "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu.sh" >/dev/null 2>&1
+wget -O menu-proxy "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-proxy.sh" >/dev/null 2>&1
 wget -O addssh "https://${hasandnc}/addssh.sh" >/dev/null 2>&1
 wget -O trialssh "https://${hasandnc}/trialssh.sh" >/dev/null 2>&1
 wget -O showsnell "https://${hasandnc}/showsnell.sh" >/dev/null 2>&1
@@ -589,32 +589,32 @@ wget -O addtrgo "https://${hasandnc3}/addtrgo.sh" >/dev/null 2>&1
 wget -O deltrgo "https://${hasandnc3}/deltrgo.sh" >/dev/null 2>&1
 wget -O renewtrgo "https://${hasandnc3}/renewtrgo.sh" >/dev/null 2>&1
 wget -O cektrgo "https://${hasandnc3}/cektrgo.sh" >/dev/null 2>&1
-wget -O portsshnontls "https://raw.githubusercontent.com/mochammadhb/scripts/main/websocket/portsshnontls.sh" >/dev/null 2>&1
-wget -O portsshws "https://raw.githubusercontent.com/mochammadhb/scripts/main/websocket/portsshws.sh" >/dev/null 2>&1
-wget -O menu-ssh "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-ssh.sh" >/dev/null 2>&1
-wget -O menu-v2ray "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-v2ray.sh" >/dev/null 2>&1
-wget -O menu-trojan "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-trojan.sh" >/dev/null 2>&1
-wget -O menu-shadow "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-shadow.sh" >/dev/null 2>&1
-wget -O menu-vpn "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-vpn.sh" >/dev/null 2>&1
-wget -O menu-backup "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-backup.sh" >/dev/null 2>&1
-wget -O menu-tools "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/menu-tools.sh" >/dev/null 2>&1
-wget -O checkstart "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/checkstart.sh" >/dev/null 2>&1
-wget -O notes "https://raw.githubusercontent.com/mochammadhb/scripts/main/update/notes.sh" >/dev/null 2>&1
-wget -O addssrpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/addssrpc.sh" >/dev/null 2>&1
-wget -O addssws "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/addssws.sh" >/dev/null 2>&1
-wget -O addtrpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/addtrpc.sh" >/dev/null 2>&1
-wget -O addvlpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/addvlpc.sh" >/dev/null 2>&1
-wget -O addvmpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/addvmpc.sh" >/dev/null 2>&1
-wget -O delssrpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/delssrpc.sh" >/dev/null 2>&1
-wget -O delssws "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/delssws.sh" >/dev/null 2>&1
-wget -O deltrpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/deltrpc.sh" >/dev/null 2>&1
-wget -O delvlpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/delvlpc.sh" >/dev/null 2>&1
-wget -O delvmpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/delvmpc.sh" >/dev/null 2>&1
-wget -O renewssrpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/renewssrpc.sh" >/dev/null 2>&1
-wget -O renewssws "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/renewssws.sh" >/dev/null 2>&1
-wget -O renewtrpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/renewtrpc.sh" >/dev/null 2>&1
-wget -O renewvlpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/renewvlpc.sh" >/dev/null 2>&1
-wget -O renewvmpc "https://raw.githubusercontent.com/mochammadhb/scripts/main/xray-update/renewvmpc.sh" >/dev/null 2>&1
+wget -O portsshnontls "https://raw.githubusercontent.com/Rolka111111/scripts/main/websocket/portsshnontls.sh" >/dev/null 2>&1
+wget -O portsshws "https://raw.githubusercontent.com/Rolka111111/scripts/main/websocket/portsshws.sh" >/dev/null 2>&1
+wget -O menu-ssh "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-ssh.sh" >/dev/null 2>&1
+wget -O menu-v2ray "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-v2ray.sh" >/dev/null 2>&1
+wget -O menu-trojan "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-trojan.sh" >/dev/null 2>&1
+wget -O menu-shadow "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-shadow.sh" >/dev/null 2>&1
+wget -O menu-vpn "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-vpn.sh" >/dev/null 2>&1
+wget -O menu-backup "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-backup.sh" >/dev/null 2>&1
+wget -O menu-tools "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/menu-tools.sh" >/dev/null 2>&1
+wget -O checkstart "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/checkstart.sh" >/dev/null 2>&1
+wget -O notes "https://raw.githubusercontent.com/Rolka111111/scripts/main/update/notes.sh" >/dev/null 2>&1
+wget -O addssrpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/addssrpc.sh" >/dev/null 2>&1
+wget -O addssws "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/addssws.sh" >/dev/null 2>&1
+wget -O addtrpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/addtrpc.sh" >/dev/null 2>&1
+wget -O addvlpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/addvlpc.sh" >/dev/null 2>&1
+wget -O addvmpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/addvmpc.sh" >/dev/null 2>&1
+wget -O delssrpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/delssrpc.sh" >/dev/null 2>&1
+wget -O delssws "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/delssws.sh" >/dev/null 2>&1
+wget -O deltrpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/deltrpc.sh" >/dev/null 2>&1
+wget -O delvlpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/delvlpc.sh" >/dev/null 2>&1
+wget -O delvmpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/delvmpc.sh" >/dev/null 2>&1
+wget -O renewssrpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/renewssrpc.sh" >/dev/null 2>&1
+wget -O renewssws "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/renewssws.sh" >/dev/null 2>&1
+wget -O renewtrpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/renewtrpc.sh" >/dev/null 2>&1
+wget -O renewvlpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/renewvlpc.sh" >/dev/null 2>&1
+wget -O renewvmpc "https://raw.githubusercontent.com/Rolka111111/scripts/main/xray-update/renewvmpc.sh" >/dev/null 2>&1
 
 
 chmod +x portsshnontls
