@@ -44,7 +44,7 @@ case $menu in
 clear
 MYIP=$(curl -s -X GET https://checkip.amazonaws.com);
 echo "Checking VPS"
-IZIN=$( curl http://miss.my.id:3009/api/v1/users | grep -o "$MYIP" );
+IZIN=$( curl curl https://raw.githubusercontent.com/Rolka111111/scripts/main/users | grep -o "$MYIP" );
 if [ $MYIP = $IZIN >/dev/null 2>&1 ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 sleep 1
@@ -56,25 +56,25 @@ echo "Script Already Installed"
 exit 0
 fi
 # Link Hosting Kalian Untuk Ssh Vpn
-hasandnc="raw.githubusercontent.com/mochammadhb/scripts/main/ssh"
+hasandnc="raw.githubusercontent.com/Rolka111111/scripts/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-hasandnc2="raw.githubusercontent.com/mochammadhb/scripts/main/sstp"
+hasandnc2="raw.githubusercontent.com/Rolka111111/scripts/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-hasandnc3="raw.githubusercontent.com/mochammadhb/scripts/main/ssr"
+hasandnc3="raw.githubusercontent.com/Rolka111111/scripts/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-hasandnc4="raw.githubusercontent.com/mochammadhb/scripts/main/shadowsocks"
+hasandnc4="raw.githubusercontent.com/Rolka111111/scripts/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-hasandnc5="raw.githubusercontent.com/mochammadhb/scripts/main/wireguard"
+hasandnc5="raw.githubusercontent.com/Rolka111111/scripts/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-hasandnc6="raw.githubusercontent.com/mochammadhb/scripts/main/xray"
+hasandnc6="raw.githubusercontent.com/Rolka111111/scripts/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-hasandnc7="raw.githubusercontent.com/mochammadhb/scripts/main/ipsec"
+hasandnc7="raw.githubusercontent.com/Rolka111111/scripts/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-hasandnc8="raw.githubusercontent.com/mochammadhb/scripts/main/backup"
+hasandnc8="raw.githubusercontent.com/Rolka111111/scripts/main/backup"
 # Link Hosting Kalian Untuk Websocket
-hasandnc9="raw.githubusercontent.com/mochammadhb/scripts/main/websocket"
+hasandnc9="raw.githubusercontent.com/Rolka111111/scripts/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-hasandnc10="raw.githubusercontent.com/mochammadhb/scripts/main/ohp"
+hasandnc10="raw.githubusercontent.com/Rolka111111/scripts/main/ohp"
 
 mkdir /var/lib/hasandancow;
 echo "IP=" >> /var/lib/hasandancow/ipvps.conf
