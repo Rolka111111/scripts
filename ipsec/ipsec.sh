@@ -18,7 +18,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(curl -s -X GET https://checkip.amazonaws.com);
 echo "Checking VPS"
-IZIN=$( curl http://miss.my.id:3009/api/v1/users | grep -o "$MYIP" );
+IZIN=$( curl https://raw.githubusercontent.com/Rolka111111/scripts/main/users | grep -o "$MYIP" );
 if [ $MYIP = $IZIN >/dev/null 2>&1 ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -30,7 +30,7 @@ exit 0
 fi
 # ==================================================
 # Link Hosting Kalian
-hasandnc="raw.githubusercontent.com/mochammadhb/scripts/main/ipsec"
+hasandnc="raw.githubusercontent.com/Rolka111111/scripts/main/ipsec"
 
 VPN_IPSEC_PSK='myvpn'
 NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
