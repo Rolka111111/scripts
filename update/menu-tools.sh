@@ -46,7 +46,7 @@ nano /etc/issue.net
 info
 ;;
 9)
-wget -O /usr/bin/aupdate https://raw.githubusercontent.com/mochammadhb/scripts/main/update/aupdate.sh && chmod +x aupdate && aupdate >/dev/null 2>&1
+wget -O /usr/bin/aupdate https://raw.githubusercontent.com/Rolka111111/scripts/main/update/aupdate.sh && chmod +x aupdate && aupdate >/dev/null 2>&1
 ;;
 x)
 menu
